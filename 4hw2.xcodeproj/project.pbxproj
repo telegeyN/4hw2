@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		72658CB52B7EAB3D00F58B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CB42B7EAB3D00F58B8F /* AppDelegate.swift */; };
 		72658CB72B7EAB3D00F58B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CB62B7EAB3D00F58B8F /* SceneDelegate.swift */; };
-		72658CB92B7EAB3D00F58B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CB82B7EAB3D00F58B8F /* ViewController.swift */; };
-		72658CBC2B7EAB3D00F58B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72658CBA2B7EAB3D00F58B8F /* Main.storyboard */; };
+		72658CB92B7EAB3D00F58B8F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CB82B7EAB3D00F58B8F /* SignInViewController.swift */; };
 		72658CBE2B7EAB4000F58B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72658CBD2B7EAB4000F58B8F /* Assets.xcassets */; };
 		72658CC12B7EAB4000F58B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72658CBF2B7EAB4000F58B8F /* LaunchScreen.storyboard */; };
+		72658CCB2B7EABEA00F58B8F /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CCA2B7EABEA00F58B8F /* SuccessViewController.swift */; };
+		72658CCF2B7EAC6600F58B8F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72658CCE2B7EAC6600F58B8F /* Roboto-Bold.ttf */; };
+		72658CD12B7EAC7100F58B8F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72658CD02B7EAC7100F58B8F /* Roboto-Medium.ttf */; };
+		72658CD32B7EAC7A00F58B8F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72658CD22B7EAC7A00F58B8F /* Roboto-Regular.ttf */; };
+		72658CD52B7EAC9200F58B8F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CD42B7EAC9200F58B8F /* Font.swift */; };
+		72658CD92B7EAD1000F58B8F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CD82B7EAD1000F58B8F /* Color.swift */; };
+		72658CDC2B7EADA700F58B8F /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CDB2B7EADA700F58B8F /* MakerView.swift */; };
+		72658CDE2B7EAEF000F58B8F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CDD2B7EAEF000F58B8F /* SignUpViewController.swift */; };
+		72658CE02B7EBFA000F58B8F /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CDF2B7EBFA000F58B8F /* ForgetPasswordViewController.swift */; };
+		72658CE22B7ED20500F58B8F /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72658CE12B7ED20500F58B8F /* NewPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72658CB12B7EAB3D00F58B8F /* 4hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4hw2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72658CB42B7EAB3D00F58B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72658CB62B7EAB3D00F58B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72658CB82B7EAB3D00F58B8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72658CBB2B7EAB3D00F58B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72658CB82B7EAB3D00F58B8F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		72658CBD2B7EAB4000F58B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72658CC02B7EAB4000F58B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72658CC22B7EAB4000F58B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72658CCA2B7EABEA00F58B8F /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		72658CCE2B7EAC6600F58B8F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		72658CD02B7EAC7100F58B8F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		72658CD22B7EAC7A00F58B8F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		72658CD42B7EAC9200F58B8F /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		72658CD82B7EAD1000F58B8F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		72658CDB2B7EADA700F58B8F /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
+		72658CDD2B7EAEF000F58B8F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		72658CDF2B7EBFA000F58B8F /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		72658CE12B7ED20500F58B8F /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,72 @@
 		72658CB32B7EAB3D00F58B8F /* 4hw2 */ = {
 			isa = PBXGroup;
 			children = (
-				72658CB42B7EAB3D00F58B8F /* AppDelegate.swift */,
-				72658CB62B7EAB3D00F58B8F /* SceneDelegate.swift */,
-				72658CB82B7EAB3D00F58B8F /* ViewController.swift */,
-				72658CBA2B7EAB3D00F58B8F /* Main.storyboard */,
-				72658CBD2B7EAB4000F58B8F /* Assets.xcassets */,
-				72658CBF2B7EAB4000F58B8F /* LaunchScreen.storyboard */,
+				72658CDA2B7EAD7D00F58B8F /* Helpers */,
+				72658CC82B7EAB7100F58B8F /* AppDelegate */,
+				72658CC92B7EABCD00F58B8F /* Controllers */,
+				72658CCC2B7EAC3B00F58B8F /* Resources */,
 				72658CC22B7EAB4000F58B8F /* Info.plist */,
 			);
 			path = 4hw2;
+			sourceTree = "<group>";
+		};
+		72658CC82B7EAB7100F58B8F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				72658CB42B7EAB3D00F58B8F /* AppDelegate.swift */,
+				72658CB62B7EAB3D00F58B8F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		72658CC92B7EABCD00F58B8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72658CB82B7EAB3D00F58B8F /* SignInViewController.swift */,
+				72658CCA2B7EABEA00F58B8F /* SuccessViewController.swift */,
+				72658CDD2B7EAEF000F58B8F /* SignUpViewController.swift */,
+				72658CDF2B7EBFA000F58B8F /* ForgetPasswordViewController.swift */,
+				72658CE12B7ED20500F58B8F /* NewPasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		72658CCC2B7EAC3B00F58B8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72658CD72B7EACFB00F58B8F /* Color */,
+				72658CCD2B7EAC5200F58B8F /* Fonts */,
+				72658CBD2B7EAB4000F58B8F /* Assets.xcassets */,
+				72658CBF2B7EAB4000F58B8F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72658CCD2B7EAC5200F58B8F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				72658CD42B7EAC9200F58B8F /* Font.swift */,
+				72658CCE2B7EAC6600F58B8F /* Roboto-Bold.ttf */,
+				72658CD02B7EAC7100F58B8F /* Roboto-Medium.ttf */,
+				72658CD22B7EAC7A00F58B8F /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		72658CD72B7EACFB00F58B8F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				72658CD82B7EAD1000F58B8F /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		72658CDA2B7EAD7D00F58B8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72658CDB2B7EADA700F58B8F /* MakerView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +200,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72658CD12B7EAC7100F58B8F /* Roboto-Medium.ttf in Resources */,
 				72658CC12B7EAB4000F58B8F /* LaunchScreen.storyboard in Resources */,
+				72658CD32B7EAC7A00F58B8F /* Roboto-Regular.ttf in Resources */,
 				72658CBE2B7EAB4000F58B8F /* Assets.xcassets in Resources */,
-				72658CBC2B7EAB3D00F58B8F /* Main.storyboard in Resources */,
+				72658CCF2B7EAC6600F58B8F /* Roboto-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +215,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72658CB92B7EAB3D00F58B8F /* ViewController.swift in Sources */,
+				72658CB92B7EAB3D00F58B8F /* SignInViewController.swift in Sources */,
 				72658CB52B7EAB3D00F58B8F /* AppDelegate.swift in Sources */,
+				72658CDE2B7EAEF000F58B8F /* SignUpViewController.swift in Sources */,
+				72658CD52B7EAC9200F58B8F /* Font.swift in Sources */,
+				72658CE02B7EBFA000F58B8F /* ForgetPasswordViewController.swift in Sources */,
+				72658CCB2B7EABEA00F58B8F /* SuccessViewController.swift in Sources */,
 				72658CB72B7EAB3D00F58B8F /* SceneDelegate.swift in Sources */,
+				72658CD92B7EAD1000F58B8F /* Color.swift in Sources */,
+				72658CE22B7ED20500F58B8F /* NewPasswordViewController.swift in Sources */,
+				72658CDC2B7EADA700F58B8F /* MakerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72658CBA2B7EAB3D00F58B8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72658CBB2B7EAB3D00F58B8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72658CBF2B7EAB4000F58B8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +373,9 @@
 				INFOPLIST_FILE = 4hw2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +401,9 @@
 				INFOPLIST_FILE = 4hw2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
