@@ -145,6 +145,8 @@ class NewPasswordViewController: UIViewController {
             showConfirmButton.heightAnchor.constraint(equalToConstant: 25)
         ])
         
+        showConfirmButton.addTarget(self, action: #selector(showConfirmTapped), for: .touchUpInside)
+        
         // submit button
         
         topView.addSubview(submitButton)
