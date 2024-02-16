@@ -9,14 +9,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    
-    private let logoImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "logo")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
+    private let logoImage = MakerView().makerImage(imageName: "logo")
     
     private let topView: UIView = {
         let view = UIView()
@@ -75,18 +68,12 @@ class SignUpViewController: UIViewController {
     
     private let signUpButton = MakerView().makerButton(backgroundColor: .init(hex: "#2855AE"), title: "Sign Up")
 
-
-    private let backgroundImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "vector")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
+    private let backgroundImage = MakerView().makerImage(imageName: "vector")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        setUpUI2()
     }
     
     private func setUpUI(){
@@ -164,6 +151,10 @@ class SignUpViewController: UIViewController {
             emailTextField.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -15),
             emailTextField.heightAnchor.constraint(equalToConstant: 35)
         ])
+    }
+
+    
+    private func setUpUI2(){
         
         //username label
         
@@ -275,6 +266,7 @@ class SignUpViewController: UIViewController {
         signInLabel.addGestureRecognizer(tapGesture)
         
     }
+
     
     @objc private func showPasswordTapped() {
         passwordTextField.isSecureTextEntry.toggle()
@@ -307,47 +299,47 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    private func check() -> Bool {
-        var isValid = true
-        
-        let isNameValid = nameValueValidate(
-            textField: nameTextField,
-            label: nameLabel,
-            error: "Please insert your Full Name"
-        )
-        
-        let isNumberValid = numberValueValidate(
-            textField: numberTextField,
-            label: numberLabel,
-            error: "Please insert your Mobile Number"
-        )
-        
-        let isEmailValid = emailValueValidate(
-            textField: emailTextField,
-            label: emailLabel,
-            error: "Please insert your Email"
-        )
-        
-        let isUsernameValid = usernameValueValidate(
-            textField: usernameTextField,
-            label: usernameLabel,
-            error: "Please insert your User Name"
-        )
-        
-        let isPasswordValid = passwordValueValidate(
-            textField: passwordTextField,
-            label: passwordLabel,
-            error: "Please insert your password"
-        )
-        
-        if isNameValid == true && isNumberValid == true && isEmailValid == true && isUsernameValid == true && isPasswordValid == true && checkPasswords() == true {
-            isValid = true
-        } else {
-            isValid = false
-        }
-        
-        return isValid
+private func check() -> Bool {
+    var isValid = true
+    
+    let isNameValid = nameValueValidate(
+        textField: nameTextField,
+        label: nameLabel,
+        error: "Please insert your Full Name"
+    )
+    
+    let isNumberValid = numberValueValidate(
+        textField: numberTextField,
+        label: numberLabel,
+        error: "Please insert your Mobile Number"
+    )
+    
+    let isEmailValid = emailValueValidate(
+        textField: emailTextField,
+        label: emailLabel,
+        error: "Please insert your Email"
+    )
+    
+    let isUsernameValid = usernameValueValidate(
+        textField: usernameTextField,
+        label: usernameLabel,
+        error: "Please insert your User Name"
+    )
+    
+    let isPasswordValid = passwordValueValidate(
+        textField: passwordTextField,
+        label: passwordLabel,
+        error: "Please insert your password"
+    )
+    
+    if isNameValid == true && isNumberValid == true && isEmailValid == true && isUsernameValid == true && isPasswordValid == true && checkPasswords() == true {
+        isValid = true
+    } else {
+        isValid = false
     }
+    
+    return isValid
+}
     
     private func nameValueValidate(textField: UITextField, label: UILabel, error: String) -> Bool {
         if textField.text?.isEmpty ?? true {

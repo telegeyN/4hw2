@@ -48,6 +48,10 @@ class MakerView {
         tf.layer.borderWidth = borderWidth
         tf.textColor = textColor
         tf.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 8))
+        tf.leftView = view
+        tf.leftViewMode = .always
         return tf
         
     }
@@ -69,5 +73,14 @@ class MakerView {
         button.layer.borderColor = borderColor.cgColor
         button.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
         return button
+    }
+    
+    func makerImage(imageName: String = "",
+                    translatesAutoresizingMaskIntoConstraints: Bool = false
+    ) -> UIImageView {
+        let image = UIImageView()
+        image.image = UIImage(named: imageName)
+        image.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
+        return image
     }
 }

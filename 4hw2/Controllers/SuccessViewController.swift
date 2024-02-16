@@ -9,22 +9,10 @@ import UIKit
 
 class SuccessViewController: UIViewController {
     
-    private var logoImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "success")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private var logoImage = MakerView().makerImage(imageName: "success")
     
-    
-    private var successLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Success!"
-        view.font = Fonts.bold.size(23)
-        view.textColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private var successLabel = MakerView().makerLabel(text: "Success!", size: 23, weight: .bold, textColor: .white)
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

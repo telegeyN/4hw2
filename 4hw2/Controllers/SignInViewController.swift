@@ -9,31 +9,13 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    private let logoImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "logo")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
     
-    private let welcomeLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Welcome Back"
-        view.font = Fonts.medium.size(34)
-        view.textColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let logoImage = MakerView().makerImage(imageName: "logo")
     
-    private let signInLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Sign in to continue"
-        view.font = Fonts.regular.size(20)
-        view.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.69)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    
+    private let welcomeLabel = MakerView().makerLabel(text: "Welcome Back", size: 34, weight: .medium, textColor: .white)
+    
+    private let signInLabel = MakerView().makerLabel(text: "Sign in to continue", size: 20, weight: .regular, textColor: UIColor(red: 1, green: 1, blue: 1, alpha: 0.69))
     
     private let topView: UIView = {
         let view = UIView()
@@ -44,44 +26,13 @@ class SignInViewController: UIViewController {
         return view
     }()
     
-    private let emailLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Employee Id / Email"
-        view.font = Fonts.regular.size(12)
-        view.textColor = .init(hex: "#A5A5A5")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let emailLabel = MakerView().makerLabel(text: "Employee Id / Email")
     
-    private let emailTextField: UITextField = {
-        let view = UITextField()
-        view.font = Fonts.regular.size(16)
-        //        view.backgroundColor = UIColor(red: 0.77, green: 0.77, blue: 0.77, alpha: 0.2)
-        view.layer.cornerRadius = 12
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let emailTextField = MakerView().makerTextField()
     
-    private let passwordLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Password"
-        view.font = Fonts.regular.size(12)
-        view.textColor = .init(hex: "#A5A5A5")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let passwordLabel = MakerView().makerLabel(text: "Password")
     
-    private let passwordTextField: UITextField = {
-        let view = UITextField()
-        view.font = Fonts.regular.size(16)
-        view.layer.cornerRadius = 12
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.lightGray.cgColor
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let passwordTextField = MakerView().makerTextField()
     
     private var showPasswordButton: UIButton = {
         let view = UIButton()
@@ -120,14 +71,7 @@ class SignInViewController: UIViewController {
         return view
     }()
     
-    private let signUpLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Don't have an account? Sign up"
-        view.font = UIFont.systemFont(ofSize: 13)
-        view.textColor = .init(hex: "#4B94EA")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    private let signUpLabel = MakerView().makerLabel(text: "Don't have an account? Sign up", size: 13, textColor: .init(hex: "#4B94EA"))
     
     private var signInButton: UIButton = {
         let view = UIButton(type: .system)
@@ -140,18 +84,13 @@ class SignInViewController: UIViewController {
         
     }()
     
-    private let backgroundImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "vector")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
+    private let backgroundImage = MakerView().makerImage(imageName: "vector")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        setUpUI2()
     }
     
     private func setUpUI(){
@@ -207,6 +146,9 @@ class SignInViewController: UIViewController {
             emailTextField.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -15),
             emailTextField.heightAnchor.constraint(equalToConstant: 40)
         ])
+    }
+    
+    private func setUpUI2(){
         
         //password label
         
@@ -293,7 +235,6 @@ class SignInViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(signUpTapped))
         signUpLabel.isUserInteractionEnabled = true
         signUpLabel.addGestureRecognizer(tapGesture)
-        
         
     }
     

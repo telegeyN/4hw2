@@ -9,13 +9,7 @@ import UIKit
 
 class NewPasswordViewController: UIViewController {
     
-    private let lockImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "lock")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
+    private let lockImage = MakerView().makerImage(imageName: "lock")
     
     private let codeTextField = MakerView().makerTextField(placeholder: " erp001",
                                                            textColor: .lightGray,
@@ -179,7 +173,7 @@ class NewPasswordViewController: UIViewController {
         
         if passwordValueValidate(textField: passwordTextField, label: passwordLabel, error: "Please insert a New Password!") == true && check() == true {
             
-            let vc = SignInViewController()
+//            let vc = SignInViewController()
             navigationController?.popToRootViewController(animated: true)
         }
         

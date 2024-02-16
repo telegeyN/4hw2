@@ -9,13 +9,7 @@ import UIKit
 
 class ForgetPasswordViewController: UIViewController {
     
-    private let lockImage: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "lock")
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-        
-    }()
+    private let lockImage = MakerView().makerImage(imageName: "lock")
     
     private let codeTextField = MakerView().makerTextField(placeholder: " Insert the code",
                                                            textColor: .lightGray,
@@ -65,6 +59,7 @@ class ForgetPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        setUpUI2()
         codeTextField.isEnabled = false
     }
     
@@ -104,6 +99,10 @@ class ForgetPasswordViewController: UIViewController {
              enterLabel.widthAnchor.constraint(equalToConstant: 245)
             ])
         
+        
+    }
+    
+    private func setUpUI2(){
         //top view
         view.addSubview(topView)
         NSLayoutConstraint.activate([
@@ -185,8 +184,6 @@ class ForgetPasswordViewController: UIViewController {
             ])
         
         submitButton.addTarget(self, action: #selector(submitButtonTapped(_:)), for: .touchUpInside)
-        
-        
     }
     
     
